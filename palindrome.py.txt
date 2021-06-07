@@ -45,6 +45,8 @@ def genpale():
 
 #step_1 isPalindrome("enter here number")
 #Result: you wil get your out in True/False
+
+
 @how to generate palindromic number:-
 #Step _1 Copy above code and run it in python
 #step_2	 type genpale()
