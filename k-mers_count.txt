@@ -1,0 +1,40 @@
+*********************************************************
+#Q. 1 K-Mers count in DNA sequecne
+
+#def kmers(read, k):
+def kmers():
+    read=input("Enter the sequence: ")
+    k=int(input("Enter K-mers need: "))
+    
+    counts = {}
+    
+    num_k= len(read) - k + 1
+    
+    for i in range(num_k):
+        
+        kmer = read[i:i+k]
+        
+        if kmer not in counts:
+            counts[kmer] = 0
+        
+        counts[kmer] += 1
+    
+    return counts
+
+
+______________________________________
+#Examples
+    --------
+    >>> count_kmers("GATGAT", 3)
+    {'ATG': 1, 'GAT': 2, 'TGA': 1}
+    """
+
+______________________________________
+
+Examples
+
+enter senquence= GATGAT
+
+Enter k-mer need: 3
+
+Output- {'ATG': 1, 'GAT': 2, 'TGA': 1}
